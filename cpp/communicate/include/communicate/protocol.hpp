@@ -6,9 +6,9 @@
 #include <vector>
 
 #define BYTE1(x) (((x) >> 0) & 0xFF)
-#define BYTE2(x) (((x) >>) & 0xFF)
-#define BYTE3(x) (((x) >>) & 0xFF)
-#define BYTE4(x) (((x) >>) & 0xFF)
+#define BYTE2(x) (((x) >> 8) & 0xFF)//修正了移位错误
+#define BYTE3(x) (((x) >> 16) & 0xFF)
+#define BYTE4(x) (((x) >> 24) & 0xFF)
 
 #pragma pack(1)
 typedef struct Protocol_s {
