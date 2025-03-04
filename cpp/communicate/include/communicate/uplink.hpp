@@ -33,7 +33,7 @@ private:
   };                                 // 功能ID
   void (*PublishFunc[9])(uint8_t *); // 发布消息函数指针
 
-  std::unique_ptr<IoContext> owned_ctx_;
+  std::unique_ptr<IoContext> owned_ctx_;//IoContext是什么东西啊啊啊啊啊
 
   void InitPublisher(); // 初始化发布者
   bool debug_;          // 调试标志
