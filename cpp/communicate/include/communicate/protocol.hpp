@@ -1,5 +1,5 @@
-#ifndef PROTOCOL_HPP
-#define PROTOCOL_HPP
+#ifndef PROTOCOL_HPP_
+#define PROTOCOL_HPP_
 
 #include <cstdint>
 #include <iostream>
@@ -89,8 +89,8 @@ typedef struct MoudleControl_s // 车体模块控制发送数据
 typedef struct ShootStautsControl_s // 发射状态量发送数据
 {
   int real_heat;                        //发射机构热量
-  int bullet_speed :                    //左弹速
-                     int game_progress; //比赛阶段
+  int bullet_speed ;                    //左弹速，修改：->；
+  int game_progress;                    //比赛阶段
 } ShootStautsBuffer;
 
 // 下位机发上位机
